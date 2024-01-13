@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: #fff;
+}
+header {
+    background-color: #232121;
+    width: 100%;
+    top: -10px;
+    padding: 15px;
+    padding: 10px;
+    transition: top 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.home{
+    margin-top: 110px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.home img{
+    border-radius: 9cm;
+    border: 2px solid white;
+    background-color: rgb(235, 172, 172);
+    width: 400px;
+   margin: 30px;
+   margin-bottom: 10px;
+}
+.one{
+    margin:50px;
+    float: left;
+    width: 700px;
+}
+.one h1{
+    font-size: 50px;
+}
+.one p{
+    font-size: 15px;
+}
+.two{
+    float: right;
+
+}
+.skills{
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.skill{
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.skill img{
+    margin-left: 50px;
+    width: 100px;
+}
+.about{
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.about p{
+    font-size: 18px;
+}
+.contact{
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.contact i{
+    padding: 20px;
+}

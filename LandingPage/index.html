@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing page</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Porsche-Logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+            <img name="slide" class="slide" alt="Slide 1">
+            <h2 id="models">Models</h2>
+            <div class="models" id="models">
+                <div class="model">
+                    <img src="model1.webp" alt="">
+                    <p>718 Cayman</p>
+                </div>
+                    <div class="model">
+                        <img src="model2.webp" alt="">
+                        <p>718 Boxster</p>
+                    </div>
+                        <div class="model">
+                            <img src="model3.webp" alt="">
+                            <p>718 CaymanStyle</p>
+                        </div>
+
+            </div>
+        <div class="about" id="about">
+            <h3>About</h3>
+            <p>
+                Welcome to the world of Porsche, where automotive excellence meets timeless elegance and precision performance. Each Porsche car is a masterpiece, seamlessly blending cutting-edge technology with meticulous craftsmanship. From the iconic 911 to the powerful Panamera, our lineup offers a symphony of power and luxury, delivering an unparalleled driving experience. Immerse yourself in the thrill of the open road with high-performance engines, experience the opulence of premium interiors, and embrace the future with our commitment to innovation and sustainability. Join a legacy that spans over seven decades, and let Porsche redefine your journey – where passion meets performance, and every drive becomes a celebration of automotive artistry. Your Porsche adventure starts here; explore our models, schedule a test drive, and find a dealership to make the extraordinary yours.
+            </p>
+            <div class="aboutimg">
+                <div class="img">
+                    <img src="img3.webp" alt="">
+                    <p>Interiror</p>
+                </div>
+                <div class="img">
+                    <img src="img1.webp" alt="">
+                    <p>Exterior</p>
+
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    
+var i = 0; 
+var images = [];
+var time = 3000;
+images[0] = "img2.webp";
+images[1] = "img3.webp";
+images[2] = "img1.webp";
+images[3]="img4.webp"
+
+function changeImg(){
+	document.slide.src = images[i];
+
+	if(i < images.length - 1){
+	  i++; 
+	} else { 
+		i = 0;
+	}
+
+	setTimeout("changeImg()", time);
+}
+
+window.onload=changeImg;
+
+
+</script>
+</html>
